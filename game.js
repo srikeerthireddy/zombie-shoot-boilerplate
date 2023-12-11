@@ -35,8 +35,8 @@ function makeZombie(){
   
   
   let zombie = document.getElementById("zombie"+ zombieId);
-  zombie.style.transform =`translateX(${getRandomInt(10,90)}vw)`;
-  zombie.style.animationDuration = `${getRandomInt(4,7)}s`;
+  zombie.style.transform =`translateX(${getRandomInt(20,80)}vw)`;
+  zombie.style.animationDuration = `${getRandomInt(3,6)}s`;
   
   zombie.onclick = () =>{
   killedZombie(zombie);
@@ -60,7 +60,7 @@ function killedZombie(zombie){
 // Iteration 5: Creating timer
 function countDown(){
     seconds--;
-    document.getElementById("timer").innerText=seconds;
+    document.getElementById("timer").textContent=seconds;
 
     let zombie=document.getElementById("zombie"+zombieId);
 
